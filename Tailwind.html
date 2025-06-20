@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find & Search Your Favourite Doctor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['IBM Plex Sans', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <style type="text/tailwindcss">
+      body {
+        font-family: 'IBM Plex Sans', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    
+    <header class="container mx-auto px-6 py-4">
+       <nav class="flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-800 first-letter:text-black">E-sheba</div>
+            <div class="hidden md:flex space-x-8">
+              <a href="#" class="text-gray-600 hover:text-blue-700 pb-1 border-b-2 border-transparent hover:border-blue-600 transition-colors duration-300">Home</a>
+              <a href="#" class="text-gray-600 hover:text-blue-700 pb-1 border-b-2 border-transparent hover:border-blue-600 transition-colors duration-300">About</a>
+              <a href="#" class="text-gray-600 hover:text-blue-700 pb-1 border-b-2 border-transparent hover:border-blue-600 transition-colors duration-300">Application</a>
+              <a href="#" class="text-gray-600 hover:text-blue-700 pb-1 border-b-2 border-transparent hover:border-blue-600 transition-colors duration-300">History</a>
+             </div>
+            <div class="hidden md:flex items-center space-x-4">
+               <a href="#" class="px-6 py-2 border border-blue-600 text-blue-600 font-semibold rounded-full hover:bg-blue-50">Log in</a>
+               <a href="#" class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700">Sign up</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-blue-800 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+       </nav>
+    </header>
+
+    <main>
+      <div class="container mx-auto px-6 pt-24 pb-12">
+        <div class="flex flex-col md:flex-row items-center">
+
+          <div class="md:w-1/2">
+            <img src="scents/Find & Search Your Favourite Doctor.png" alt="Find and Search Your Favourite Doctor" class="w-full max-w-lg mb-6 drop-shadow-lg">
+
+            <p class="text-gray-500 mb-16 max-w-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+
+            <form class="flex items-center w-full max-w-2xl p-2 space-x-4 bg-white border border-gray-200 rounded-full">
+              <div class="flex items-center flex-1 pl-2">
+                <img src="scents/Group.svg">
+                <input type="text" placeholder="Doctor's Name" class="w-full ml-2 bg-transparent focus:outline-none focus:ring-0 placeholder-gray-500">
+                <img src="scents/setinha para baixo.svg">
+              </div>
+              <img src="scents/localização.svg">
+              <div>
+
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+    <section class="bg-slate-50 py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+          Our Consulting Specialists
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <div class="bg-white p-8 rounded-lg border border-gray-200 text-center shadow-sm">
+            <div class="inline-block p-4 bg-blue-100 rounded-full mb-4">
+              <img src="scents/Virus.svg">
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Covid-19 Test</h3>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+          </div>
+
+          <div class="bg-blue-600 p-8 rounded-lg text-center shadow-lg transform scale-105">
+            <div class="inline-block p-4 bg-white/20 rounded-full mb-4">
+              <img src="scents/pulmão.svg">
+            </div>
+             <h3 class="text-xl font-semibold text-white mb-2">Heart Lungs</h3>
+             <p class="text-blue-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+          </div>
+
+          <div class="bg-white p-8 rounded-lg border border-gray-200 text-center shadow-sm">
+            <div class="inline-block p-4 bg-blue-100 rounded-full mb-4">
+              <img src="scents/miojo.svg">
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Suppliment</h3>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+           </div>
+          
+           <div class="bg-white p-8 rounded-lg border border-gray-200 text-center shadow-sm">
+            <div class="inline-block p-4 bg-blue-100 rounded-full mb-4">
+              <img src="scents/cabeca.svg">
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Mental Health</h3>
+             <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+           </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
